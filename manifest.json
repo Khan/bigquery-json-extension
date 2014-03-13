@@ -1,0 +1,13 @@
+{
+    "name": "BigQuery JSON Extractor",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Regexp generator for querying json text fields",
+    "content_scripts": [
+	{
+	    "matches": ["http://bigquery.cloud.google.com/*", "https://bigquery.cloud.google.com/*"],
+	    "js": ["js/jquery.js", "js/bq_regex.js"],
+	    "run_at": "document_start"
+	}
+    ]
+}
